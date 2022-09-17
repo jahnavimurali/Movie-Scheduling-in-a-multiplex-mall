@@ -45,24 +45,15 @@ If the movie has some special features like 3D or Dolby Atmos, then its priority
 
 #FILE MANIFEST
 The concerning zip file consists of the following contents:
--This README TXT File
--Presentation pdf
--Project Report pdf
--The SOURCE CODE folder
-	-Backend .py file: Backend code.
-	-Backend- function .py file: Modules/ classes used in the backend code.
-	-FirstForm, SecondForm, ThirdForm, Result .html files: The 3 survey pages/ forms of the web- application and the page where the generated schedule is displayed to 
-	 the user.
-	-views .py file: a django document where the pages of the website are rendered. The collected input from the survey form is converted to the form the backend supports.
-	 The modules/functions of the backend are called here. Processing is done and output is generated.
-	-urls .py file: a django document where the urls of the various pages of the website are specified.
--The Django folder: All the survey forms (.html), designing (.css, .js) and .py forms pertaining to the web-application created.
+-All the survey forms (.html), designing (.css, .js) and .py forms pertaining to the web-application created.
+-The concerning backend .py file - function.
 
 #WEBSITE
 The following url directs you to the About page of the Best Practices Movie Scheduler Website.
 http://127.0.0.1:8000/
 
 #OPERATING INSTRUCTIONS
+-Install Django in system.
 -In the command prompt, mount on the directory mysite2 present in the Django directory using cd command.
 -Run python manage.py runserver.
 -The development server is hosted and its url appears on the terminal.Copy the url and paste it on the browser.
