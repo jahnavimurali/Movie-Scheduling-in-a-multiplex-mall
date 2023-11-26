@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid plum;
+  align-items: center;
+}
+body {
+background-image: url(../static/images/bg3.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    text-decoration: double;
+    text-decoration-color: bisque;
+}
+div{
+    text-align: center;
+}
+</style>
+<body>
+    <h1>Best Practices Movie Scheduler</h1>
+    <h3>Your schedule has been generated!! </h3>
+    {% for key,values in schedule.items %}
+        <br>
+        <div>
+            {{key}}
+        </div>
+        <br>
+        <table class = "center" style="width: 75%">
+            <thead>
+                <tr>
+                    <th>Screens</th>
+                    <th> 5:00 a.m.</th>
+                    <th> 8:30 a.m.</th>
+                    <th>12:00 p.m.</th>
+                    <th> 3:30 p.m.</th>
+                    <th> 7:00 p.m.</th>
+                    <th>10:30 p.m.</th>
+                </tr>
+            </thead>
+            </tbody>
+                {% for k,v in values.items %}
+                <tr>
+                <td>{{k}}</td>
+                {% for k1,v1 in v.items %}
+                    <td>{{v1}}</td>
+                {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table> 
+    {% endfor %}
+</body>
+</html>
+
+
+
+
+
+
