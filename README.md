@@ -19,12 +19,12 @@ This way we satisfy the demand of the audience, ensure success of the movies, an
 The total number of slots per screen per day is 6, the timings of the slots are given below.
 The slots are of 3 hours each with a 30-minute interval in between slots.
 
-Slot 1 :  5:00am - 8:00am
-Slot 2 :  8:30am - 11:30am
-Slot 3 :  12:00pm - 3:00pm
-Slot 4 : 3:30pm - 6:30pm
-Slot 5 : 7:00pm - 10:00pm
-Slot 6: 10:30pm - 1:30am
+* Slot 1 :  5:00am - 8:00am
+* Slot 2 :  8:30am - 11:30am
+* Slot 3 :  12:00pm - 3:00pm
+* Slot 4 : 3:30pm - 6:30pm
+* Slot 5 : 7:00pm - 10:00pm
+* Slot 6: 10:30pm - 1:30am
 
 # CONSTRAINTS
 - Demand-based calculation of the number of showings per movie based on cast weightage, demand score and success rate.
@@ -44,7 +44,7 @@ Slot 6: 10:30pm - 1:30am
 
 
 # OPERATING INSTRUCTIONS
-- In the command prompt, mount on the directory mysite2 present in the Django directory using cd command.
+- cd into '/django/mysite2/'.
 - Run ```python manage.py runserver```
 - The development server is hosted and its url appears on the terminal.Copy the url and paste it on the browser.
 
